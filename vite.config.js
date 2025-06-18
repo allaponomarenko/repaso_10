@@ -9,6 +9,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+     base: '/repass_10/',
     root: 'src',
     build: {
       sourcemap: true,
