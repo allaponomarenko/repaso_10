@@ -3,7 +3,9 @@
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: auto;
+  padding-top: 30px;
 }
 .nav-logo {
   display: inline-flex;
@@ -17,15 +19,24 @@
   gap: 40px;
 }
 .nav-link {
+  color: indigo;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
   position: relative;
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   transition: 200ms ease-in;
+   border: 1px solid;
+  border-color: #450bc3;
+  border-radius: 8px;
+  background-color: #e8e8f0;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #747bff;
+  color: #5056cf;
+  background-color: #acaed0;
 }
 .nav-link::after {
   content: '';
