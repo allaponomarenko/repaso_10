@@ -30,3 +30,17 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+.timer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  gap: 35px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
