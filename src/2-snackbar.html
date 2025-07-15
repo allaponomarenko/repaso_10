@@ -11,6 +11,13 @@
 
   <link rel="stylesheet"
         href="./css/styles.css" />
+
+  <link rel="stylesheet"
+        href="./css/snackbar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
 </head>
 
 <body>
@@ -23,9 +30,43 @@
         Go back
       </a>
     </div>
+
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number"
+               name="delay"
+               required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+
+        <label>
+          <input type="radio"
+                 name="state"
+                 value="fulfilled"
+                 required />
+          Fulfilled
+        </label>
+
+
+        <label>
+          <input type="radio"
+                 name="state"
+                 value="rejected"
+                 required />
+          Rejected
+        </label>
+
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
   </main>
 
-
+  <script src="./js/2-snackbar.js"
+          type="module"></script>
 </body>
 
 </html>
